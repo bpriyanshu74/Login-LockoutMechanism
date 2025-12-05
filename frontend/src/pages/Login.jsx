@@ -1,11 +1,19 @@
 import { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { Navigate, useNavigate } from "react-router-dom";
 import { loginUser } from "../api/auth";
 import ErrorAlert from "../components/ErrorAlert";
 import Layout from "../components/Layout";
 import PasswordInput from "../components/PasswordInput";
 
 export default function Login() {
+  // For the purpose of strict design approach: where post login we should not got the login page using browser back button.
+
+  // const token = localStorage.getItem("token");
+
+  // if (token) {
+  //   return <Navigate to="/dashboard" replace />;
+  // }
+
   const navigate = useNavigate();
 
   const [email, setEmail] = useState("");
