@@ -2,6 +2,14 @@
 
 A full-stack login application implementing user-level lockout, IP-level lockout, and JWT-based authentication. Built using React, Node.js/Express, and MongoDB, then deployed on Netlify and Render.
 
+### Note:
+Test Credentials:
+
+  Email: test@example.com
+  Password: Secret123
+
+Also you can signup just in case you prefer not to use the test credentails. And please be aware that the first login attempt may take slightly longer than usual, as the frontend, backend, and database are hosted on different platforms. Subsequent logins will perform smoothly.
+
 ## Setup Instructions
 ### Backend:
 1.Navigate to /backend
